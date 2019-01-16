@@ -103,7 +103,7 @@ CREATE TABLE IF NOT EXISTS `patient` (
   PRIMARY KEY (`Patient_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='患者信息表';				
 </pre>				
-##最终CDM的DDL语句(PDCDM扩展模型)：				
+## 最终CDM的DDL语句(PDCDM扩展模型)：				
 				
 <pre>
 CREATE TABLE IF NOT EXISTS `patient` (
@@ -124,3 +124,18 @@ CREATE TABLE IF NOT EXISTS `patient` (
   PRIMARY KEY (`Patient_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='患者信息表';"				
 </pre>			
+
+
+## 统计信息
+--patient	
+  统计本表相关的数据，一般按月来统计。需要保留查询语句。（所有表都有该要求）
+  每个月患者独立患者数,分住院和非住院（门诊、急诊等），以及就诊患者数。count(distinct patient_id)。
+
+--visit
+  每个月住院和非住院（门诊、急诊等）就诊数。
+
+--diagnosis
+  每个月住院和非住院（门诊、急诊等）诊断患者数(count(distinct patient_id))、诊断就诊数（count(distinct visit_id)）。
+  住院和非住院（门诊、急诊等）的诊断记录数(count(*))。
+  
+  
