@@ -1,4 +1,4 @@
-#patient表结构理解
+# patient表结构理解
 - PDCDM字段对应
 - 设计要点
 - 本表数据处理需求点
@@ -29,7 +29,7 @@
 | Provider_ID        | 医疗机构编码                                                    |            | Y      |          | varchar(30) | 医院编号。                                                               |
 | Update_Datetime    | 记录抓取到PDCDM的时间戳，用于后续增量处理数据                   |            | Y      |          | datetime    | 数据抓取时间戳，用于标记该记录抓取时间。                                 |
 
-##附：（济南二院例）
+## 附：（济南二院例）
 
 | jn_n2_his_comm.marital_status_dict |                    | 婚姻字典表 |    |      |
 |------------------------------------|--------------------|------------|----|------|
@@ -131,64 +131,3 @@ CREATE TABLE IF NOT EXISTS `patient` (
   PRIMARY KEY (`Patient_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='患者信息表';"				
 </pre>			
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-						
-						
-						
-		
-						
-						
-						
-						
-						
-		
-						
-						
-						
-						
-						
-						
-						
-						
-						
-
