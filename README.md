@@ -137,4 +137,17 @@ CREATE TABLE IF NOT EXISTS `patient` (
   每个月住院和非住院（门诊、急诊等）诊断患者数(count(distinct patient_id))、诊断就诊数（count(distinct visit_id)）。
   住院和非住院（门诊、急诊等）的诊断记录数(count(*))。
   
-  
+
+<details>
+<summary><mark><font color=darkred>点击查看详细内容</font></mark></summary>
+	
+| jn_n2_his_comm.marital_status_dict |                    | 婚姻字典表 |    |      |
+|------------------------------------|--------------------|------------|----|------|
+|                                    |                    |            |    |      |
+| patient                            | RAW_Marital_Status | 1          | WH | 未婚 |
+| patient                            | RAW_Marital_Status | 2          | YH | 已婚 |
+| patient                            | RAW_Marital_Status | 3          | SO | 丧偶 |
+| patient                            | RAW_Marital_Status | 4          | LH | 离婚 |
+| patient                            | RAW_Marital_Status | 9          | QT | 其他 |
+
+</details>
